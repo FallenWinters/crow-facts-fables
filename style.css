@@ -1,9 +1,15 @@
+html {
+    background-color: rgb(61, 61, 61);
+}
+
 #headerDiv {
     background-color:grey;
+    height: 50px;;
+    color: black;
 }
 
 #special-buttons {
-    background-color:aquamarine;
+    background-color:rgb(224, 224, 224);
     width:100%;
     height: 10%;
     align-content: center;
@@ -14,4 +20,9 @@
     width: 19%;
     height: 100%;
     margin: 0px;
+    background-color: azure;
+}
+
+div{
+    color: aqua;
 }
