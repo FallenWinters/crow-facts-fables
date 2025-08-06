@@ -1,4 +1,11 @@
 #crowOrFaux {
 background-color: #5c82eb;
-border: 10px, solid, blue;
+border: 5px, solid, blue;
+position: static;
+
+}
+
+#crow_cara{
+    position: relative;
+    left: 250px;
 }

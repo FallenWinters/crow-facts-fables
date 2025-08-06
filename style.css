@@ -2,6 +2,10 @@ html {
     background-color: black;
 }
 
+#overheadDiv{
+position:sticky;
+}
+
 #headerDiv {
     background-color:rgb(20, 11, 35);
     height: 50px;;

@@ -1,16 +1,17 @@
 //Imma make a game here so beware of change >:D
 const player_chara = document.getElementById('crow_cara');
-const moveAmount = 5;
-let x = 0;
+const moveAmount = 10;
+let x = 250;
 let y = 0;
+
 
 /*document.addEventListener("keyup", event =>{
     player_chara.src = null;
 })*/
 
 document.addEventListener("keydown", event =>{
-    if(event.key.toLowerCase('a') || event.key.toLowerCase('d') ||  event.key.toLowerCase('w') 
-        || event.key.startsWith('Arrow') || event.key.toLowerCase('spacebar')){
+    if(event.key.startsWith('a') || event.key.startsWith('d') 
+        || event.key.startsWith('Arrow')){
     
         switch(event.key){
             case 'ArrowLeft':
@@ -19,20 +20,16 @@ document.addEventListener("keydown", event =>{
             case 'ArrowRight':
                 x+=moveAmount;
                 break;
-            case 'ArrowUp':
-                y-=moveAmount;
-                break;
             case 'a':
                 x-=moveAmount;
                 break;
             case 'd':
-                x+=moveAmount;
-                break;
-            case 'w':
-                y-=moveAmount;
-                break;
-            case 'spacebar':
-                y-=moveAmount;
+                if (x>=300) {
+                    x = 200;
+                } else {
+                    x+=moveAmount;
+                }
+                
                 break;
             
         }
@@ -40,4 +37,4 @@ document.addEventListener("keydown", event =>{
     player_chara.style.top = `${y}px`;
     player_chara.style.left = `${x}px`;
     }
-})
+});
