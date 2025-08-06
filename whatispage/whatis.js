@@ -4,9 +4,9 @@ const moveAmount = 5;
 let x = 0;
 let y = 0;
 
-document.addEventListener("keyup", event =>{
+/*document.addEventListener("keyup", event =>{
     player_chara.src = null;
-})
+})*/
 
 document.addEventListener("keydown", event =>{
     if(event.key.toLowerCase('a') || event.key.toLowerCase('d') ||  event.key.toLowerCase('w') 
