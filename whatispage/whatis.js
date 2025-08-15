@@ -15,17 +15,33 @@ document.addEventListener("keydown", event =>{
     
         switch(event.key){
             case 'ArrowLeft':
-                x-=moveAmount;
+                
+                if(x<=100){
+                    x=100;
+                }else{
+                    x-=moveAmount;
+                }
+                
                 break;
             case 'ArrowRight':
-                x+=moveAmount;
+                if(x>=410){
+                    x=410;
+                } else {
+                    x+=moveAmount;
+                }
+                
                 break;
             case 'a':
-                x-=moveAmount;
+                if(x<=100){
+                    x = 100;
+                } else {
+                    x -= moveAmount;
+                }
+                
                 break;
             case 'd':
-                if (x>=300) {
-                    x = 200;
+                if (x>=410) {
+                    x = 410;
                 } else {
                     x+=moveAmount;
                 }
